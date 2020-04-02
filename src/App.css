@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0px
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-open {
+  height: auto;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home {
+  color: #fed136;
+  font-family: cursive, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-selection {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-button {
+  height: 50px;
+  width: 100px;
+  background-color: #fed136;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+}
+
+.nav-buttons {
+  margin: 10px;
+  color: white
+}
+
+.nav-buttons:hover {
+  color: #fed136;
+}
+
+@media (max-width: 800px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .header {
+    display: inline-block;
+    background-color: #212529;
+    overflow: hidden;
+  }
+
+  .home {
+    margin: 5vh 10vw;
+  }
+
+  .nav-selection {
+    flex-direction: column;
+  }
+}
+@media (min-width: 800px) {
+  .menu-button {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-section {
+  height: 110vh;
+  width: 100%;
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-welcome {
+  font-size: 40px;
+  margin: 0px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-tag {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 10px;
+  text-align: center;
+}
+
+.main-button {
+  height:70px;
+  width: 225px;
+  background-color: #fed136;
+  border: 0px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 50px;
+}
+
+@media (max-width: 800px) {
+  .main-welcome {
+    margin-top: 100px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 475px) {
+  .main-welcome {
+    margin-top: 150px;
   }
 }
